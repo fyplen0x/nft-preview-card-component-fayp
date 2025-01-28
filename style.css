@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Verydarkbluemain: hsl(217, 54%, 11%);
+--Verydarkbluecard: hsl(216, 50%, 16%);
+--Verydarkblueline: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Outfit" , sans-serif;
+    font-size: 18px;
+    background-color: var(--Verydarkbluemain);
+    color: var(--White);
+}
+
+.container{
+    height: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    padding: 1.5rem;
+    margin-top: 9.5rem;
+    border-radius: 15px;
+    margin-inline: auto;
+    background-color: var(--Verydarkbluecard);
+}
+
+.headimg{
+    border-radius: 9px;
+    max-width: 100%;
+}
+
+.image-content{
+    max-width: 302px;
+    border-radius: 9px;
+    height: 302px;
+}
+
+.head{
+    margin-top: 1.5rem;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.45px;
+}
+
+.text{
+    margin-top: 1.2rem;
+    line-height: 140%;
+    font-weight: 300;
+    color: var(--Softblue);
+}
+
+.price-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    font-size: 16px;
+    width: 100%;
+}
+
+.price, .time {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    letter-spacing: 0.2px;
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.time{
+    color: var(--Softblue);
+    font-weight: 400;
+}
+
+.price img {
+    width: 11px; 
+    height: auto;
+}
+
+.creation{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    border-top: 1px solid var(--Verydarkblueline);
+    padding-top: 1rem;
+}
+
+.creation p{
+    font-size: 16px;
+    color: var(--Softblue);
+    letter-spacing: 0.3px;
+}
+
+.creation span{
+    color: var(--White);
+    letter-spacing: 0.1px;
+}
+
+
+.creation img{
+    width: 32px;
+    border: 1px solid var(--White);
+    border-radius: 16px;
+    
+}
+
+h1:hover, h1:focus, span:hover, span:focus{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.headimg:hover{
+    opacity: 0.5;
+  }
+  
+.image-content:hover{
+    cursor: pointer;
+    background-image:linear-gradient(to bottom, hsla(178,100%,50%,50%), hsla(178,100%,50%,50%)),
+    url('images/icon-view.svg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+.attribution { 
+    margin-top: 1rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
